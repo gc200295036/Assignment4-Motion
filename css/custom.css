@@ -1,0 +1,105 @@
+/*Nick Brazda A4 CSS */
+.myKeyframe {
+  height: 50px;
+  width: 50px;
+  /*50% = Circle*/
+  border-radius: 50%;
+  background-color: rgb(0,175,0);
+  position: relative;
+
+  /* animation short hand code */
+ animation: nicksKeyFrame 4s linear 3s infinite forwards normal;
+
+  /* animaton long hand code
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-name: nicksKeyFrame;
+  animation-delay:3s;
+  animation-duration: 4s; 
+  */
+}
+/* @keyframe*/
+@keyframes nicksKeyFrame {
+  25% {background-color: rgb(255,0,0);}
+  50% {background-color: rgb(255,255,0); left:500px;}
+  75% {background-color: rgb(0,0,255);}
+  100% {background-color: rgb(0,200,0);}
+}
+/* Subscribe button animation*/
+.myButton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.myButton:hover {
+    background-color: yellow;
+    color: black;
+}
+.myButton:active {
+  background-color: green;
+  box-shadow: 0 2px #666;
+  color: white;
+  transform: translateY(10px);
+}
+.hoverTransition {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(0,175,0);
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+.hoverTransition:hover {
+  width: 300px;
+}
+
+/*#4 - Javascript animation*/
+#myContainer {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: blue;
+  border-radius: 50%;
+}
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.btc-background {
+  background-color:orange;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: relative;
+}
+.btc-background:hover {
+  width: 10%;
+  height: 10%;
+}
+body > div.btc-background > i {
+  color: white;
+  position: relative;
+  width: 0px;
+  height: 0px;
+  top: 40px;
+  bottom: 25px;
+  left: 40px;
+  right: 0px;
+}
+
+

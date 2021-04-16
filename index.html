@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment #4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--link css-->
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/custom.css'>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link js-->
+    <script src='./js/main.js'></script>
+</head>
+<body>
+    <h1>#1 - Keyframe Animation</h1>
+    <p>This is an example of a simple keyframe animation, that slides to the right and back to the left. Changes it's colour, Can play 1 - infinite amount of times and also uses CSS animation and the @keyframe rule</p>
+    <div class="myKeyframe"></div>
+
+    <h2>#2 - Youtube Subscribe Button Animation</h2>
+    <p>I wanted to make a youtube subscribe button so I did! This button uses javascript to switch the text output when a user clicks</p>
+    <button onclick="buttonClick()" class="myButton" id="myButton">Subscribe</button>
+
+    <h3>#3 - Transform on Hover Animation </h3>
+    <p> Now I will take the circle from above and make it stretch when the user hovers over it This is a on hover transition animation</p>
+    <div class="hoverTransition"></div>
+
+    <h4>#4 - JavaScript Animation!</h4>
+    <p>This animation uses javascript I wanted to simulate the sun moving around the earth, I was pretty amazed when I saw Jeremy's lesson 8 with the solar planets I wanted to make my own version of that. This is just very simple but can be improved upon to make it look more like the sun and more like earth!
+    you can learn more about this javascript animation here <a href="https://www.w3schools.com/howto/howto_js_animate.asp">https://www.w3schools.com/howto/howto_js_animate.asp</a>
+    </p>
+    <p>
+    <button onclick="nicksAnimation()">Click Me</button> 
+    </p>
+    <div id ="myContainer">
+    <div id ="myAnimation"></div>
+    </div>
+
+    <h5>#5 Spinning Bitcoin- Font Awesome Animate Icon</h5>
+    <p>Using font awesome you can have a pre exisitng library of icons, I chose to use the currency icon for Bitcoin. I designed an orange background that is a circle and added the fontawesome library in my html file. </p>
+    <p>BITCOIN TO THE MOON! HODL!</p>
+    <div class="btc-background">
+        <!-- using fa-spin will make any font-awesome icon spin there is a few other pre built animations font-awesome can use this is awesome because it is free and can help a web programmer a lot if they aren't able to make their own graphic design-->
+    <i class="fa fa-btc fa-spin" aria-hidden="true"></i>
+    </div>
+    <h6>Loading Icon from font awesome</h6>
+    <p>This animation is as simple as it gets, and any brand new developer would be able to utilize and understand these visit <a href="www.fontawesome.com">fontawesome.com</a></p>
+    <p>class="fa fa-spinner fa-spin" you can also use fa-pulse for pulsing effect </p>
+    <!--Font awesome loading icons-->
+    <i class="fa fa-spinner fa-spin">Spin</i>
+    <i class="fa fa-spinner fa-pulse">Pulse</i>
+</body>
+</html>
